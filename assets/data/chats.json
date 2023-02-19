@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "user": {
+      "id": "u1",
+      "name": "Sam",
+      "image": "https://media.licdn.com/dms/image/C4E03AQEr1WQ5xjYegQ/profile-displayphoto-shrink_100_100/0/1620682182956?e=1681948800&v=beta&t=j3DrksozuH1DNaK8ZbJYb7_yvG8i4t9aIekQHt5ghgw"
+    },
+    "lastMessage": {
+      "id": "m1",
+      "text": "Testing texting myself",
+      "createdAt": "2023-01-12T14:30:00.000Z"
+    }
+  },
+  {
+    "id": "2",
+    "user": {
+      "id": "u2",
+      "name": "Madi",
+      "image": "https://media.licdn.com/dms/image/C4E03AQEES4kecYgDlA/profile-displayphoto-shrink_100_100/0/1652306489412?e=1681948800&v=beta&t=gb9NzIFX_fEAYdRG0FM42I1xNNxbXsz2vMB-6frym-o"
+    },
+    "lastMessage": {
+      "id": "m10",
+      "text": "BRB - Sam",
+      "createdAt": "2023-01-12T23:01:00.000Z"
+    }
+  }
+]

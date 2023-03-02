@@ -1,6 +1,6 @@
 // Front-End reference/guide video: https://www.youtube.com/watch?v=mxXJSVW4tRY
 // Backend reference/guide videos: 
-//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc
+//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc        --> Stopped @22:32
 //  pt2: https://www.youtube.com/watch?v=-m-4_DRLmrc
 //  pt3: https://www.youtube.com/watch?v=pqQGU-JsD7k
 

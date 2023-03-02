@@ -6,17 +6,19 @@ import {
   FlatList,
   KeyboardAvoidingView,
   Platform,
+  Pressable,
 } from "react-native";
 import bg from "../../assets/images/whats_app_bg.png";
 import Message from "../components/Message";
 import messages from "../../assets/data/messages.json";
 import InputBox from "../components/InputBox";
 import { useRoute, useNavigation } from "@react-navigation/native";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const ChatScreen = () => {
   const route = useRoute();
   const navigation = useNavigation();
+  const ref = useRef()
 
   useEffect(() => {
     navigation.setOptions({ title: route.params.name });
@@ -26,7 +28,7 @@ const ChatScreen = () => {
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
       style={styles.bg}
-      keyboardVerticalOffset={Platform.OS === "ios" ? 60 : 90}  // 60 for ios and 90 for android
+      keyboardVerticalOffset={Platform.OS === "ios" ? 60 : 90} // 60 for ios and 90 for android
     >
       <ImageBackground source={bg} style={styles.bg}>
         <FlatList
@@ -35,7 +37,10 @@ const ChatScreen = () => {
           style={styles.list}
           // inverted
         />
-        <InputBox />
+        {/* Pressable to trigger scroll to end of messages on press */}
+        <Pressable >
+          <InputBox />
+        </Pressable>
       </ImageBackground>
     </KeyboardAvoidingView>
   );

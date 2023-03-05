@@ -1,16 +1,19 @@
 // Front-End reference/guide video: https://www.youtube.com/watch?v=mxXJSVW4tRY
-// Backend reference/guide videos: 
-//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc        --> Stopped @22:32
+// Backend reference/guide videos:
+//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc        --> Stopped @120:32
 //  pt2: https://www.youtube.com/watch?v=-m-4_DRLmrc
 //  pt3: https://www.youtube.com/watch?v=pqQGU-JsD7k
 
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import ChatsScreen from "./src/screens/ChatsScreen";
-import ChatScreen from "./src/screens/ChatScreen";
 import Navigator from "./src/navigation";
+import { Amplify } from "aws-amplify"; // for most backend tools
+import awsconfig from "./src/aws-exports";
+import { withAuthenticator } from "aws-amplify-react-native"; // for most ui tools
 
-export default function App() {
+Amplify.configure({ ...awsconfig, Analytics: { disabled: true } });
+
+function App() {
   return (
     <View style={styles.container}>
       <Navigator />
@@ -27,3 +30,12 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+// To style, set buttons directly and style ui. onPress, use state to get user inputs
+// (username, password) and call provided AWS out of the box functions to interact with backend
+// StyleSheet.create({
+
+
+// })
+
+export default withAuthenticator(App); // withAuthenticator manages user signing in and signing up

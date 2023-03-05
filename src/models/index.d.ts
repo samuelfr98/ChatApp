@@ -82,7 +82,7 @@ type EagerUser = {
   readonly status?: string | null;
   readonly image?: string | null;
   readonly ChatRooms?: (UserChatRoom | null)[] | null;
-  readonly Message?: (Message | null)[] | null;
+  readonly Messages?: (Message | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }
@@ -97,7 +97,7 @@ type LazyUser = {
   readonly status?: string | null;
   readonly image?: string | null;
   readonly ChatRooms: AsyncCollection<UserChatRoom>;
-  readonly Message: AsyncCollection<Message>;
+  readonly Messages: AsyncCollection<Message>;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
 }

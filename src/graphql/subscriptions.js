@@ -226,7 +226,7 @@ export const onCreateUser = /* GraphQL */ `
         nextToken
         startedAt
       }
-      Message {
+      Messages {
         items {
           id
           text
@@ -270,7 +270,7 @@ export const onUpdateUser = /* GraphQL */ `
         nextToken
         startedAt
       }
-      Message {
+      Messages {
         items {
           id
           text
@@ -314,7 +314,7 @@ export const onDeleteUser = /* GraphQL */ `
         nextToken
         startedAt
       }
-      Message {
+      Messages {
         items {
           id
           text
@@ -382,7 +382,7 @@ export const onCreateUserChatRoom = /* GraphQL */ `
           nextToken
           startedAt
         }
-        Message {
+        Messages {
           nextToken
           startedAt
         }
@@ -445,7 +445,7 @@ export const onUpdateUserChatRoom = /* GraphQL */ `
           nextToken
           startedAt
         }
-        Message {
+        Messages {
           nextToken
           startedAt
         }
@@ -508,7 +508,7 @@ export const onDeleteUserChatRoom = /* GraphQL */ `
           nextToken
           startedAt
         }
-        Message {
+        Messages {
           nextToken
           startedAt
         }

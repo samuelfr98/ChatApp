@@ -247,8 +247,8 @@ export const schema = {
                         ]
                     }
                 },
-                "Message": {
-                    "name": "Message",
+                "Messages": {
+                    "name": "Messages",
                     "isArray": true,
                     "type": {
                         "model": "Message"
@@ -407,5 +407,5 @@ export const schema = {
     "enums": {},
     "nonModels": {},
     "codegenVersion": "3.3.6",
-    "version": "9605eff1ddff5a949f38844f8cabaa4c"
+    "version": "c68b73af5a57c6c0201613f81fb1bcd7"
 };

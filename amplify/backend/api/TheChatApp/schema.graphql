@@ -18,5 +18,6 @@ type User @model @auth(rules: [{allow: public}]) {
   status: String
   image: String
   ChatRooms: [ChatRoom] @manyToMany(relationName: "UserChatRoom")
-  Message: [Message] @hasMany(indexName: "byUser", fields: ["id"])
+  Messages: [Message] @hasMany(indexName: "byUser", fields: ["id"])
 }
+ 

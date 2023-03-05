@@ -290,7 +290,7 @@ export const getUser = /* GraphQL */ `
         nextToken
         startedAt
       }
-      Message {
+      Messages {
         items {
           id
           text
@@ -329,7 +329,7 @@ export const listUsers = /* GraphQL */ `
           nextToken
           startedAt
         }
-        Message {
+        Messages {
           nextToken
           startedAt
         }
@@ -366,7 +366,7 @@ export const syncUsers = /* GraphQL */ `
           nextToken
           startedAt
         }
-        Message {
+        Messages {
           nextToken
           startedAt
         }
@@ -424,7 +424,7 @@ export const getUserChatRoom = /* GraphQL */ `
           nextToken
           startedAt
         }
-        Message {
+        Messages {
           nextToken
           startedAt
         }

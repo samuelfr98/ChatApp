@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     flex: 1,
     // borderBottomWidth: StyleSheet.hairlineWidth,
     // borderBottomColor: "lightgray",
-    marginRight: 5,
+    
   },
   image: {
     width: 60,

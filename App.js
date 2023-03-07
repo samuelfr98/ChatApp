@@ -1,6 +1,6 @@
 // Front-End reference/guide video: https://www.youtube.com/watch?v=mxXJSVW4tRY
 // Backend reference/guide videos:
-//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc        --> Stopped @2:03:12 ; might have to check his GitHub link from video description
+//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc        --> Stopped @2:28:25 ; chats are not specific for each user/duplicate chats with same users can be created. 
 //  pt2: https://www.youtube.com/watch?v=-m-4_DRLmrc
 //  pt3: https://www.youtube.com/watch?v=pqQGU-JsD7k
 

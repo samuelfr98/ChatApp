@@ -12,8 +12,8 @@ const MainTabNavigator = () => {
     <Tab.Navigator
       initialRouteName="Chats"
       screenOptions={{
-        tabBarStyle: { backgroundColor: "whitesmoke" },
-        headerStyle: { backgroundColor: "whitesmoke" },
+        tabBarStyle: { backgroundColor: "#06140E" },
+        headerStyle: { backgroundColor: "white" },
       }}
     >
       <Tab.Screen
@@ -21,7 +21,7 @@ const MainTabNavigator = () => {
         component={NotImplementedScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="logo-whatsapp" size={size} color={color} />
+            <Ionicons name="logo-whatsapp" size={size} color={"#55E166"} />
           ),
         }}
       />
@@ -30,7 +30,7 @@ const MainTabNavigator = () => {
         component={NotImplementedScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="call-outline" size={size} color={color} />
+            <Ionicons name="call-outline" size={size} color={"#55E166"} />
           ),
         }}
       />
@@ -39,7 +39,7 @@ const MainTabNavigator = () => {
         component={NotImplementedScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="camera-outline" size={size} color={color} />
+            <Ionicons name="camera-outline" size={size} color={"#55E166"} />
           ),
         }}
       />
@@ -48,14 +48,14 @@ const MainTabNavigator = () => {
         component={ChatsScreen}
         options={({ navigation }) => ({
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="ios-chatbubbles-sharp" size={size} color={color} />
+            <Ionicons name="ios-chatbubbles-sharp" size={size} color={"#55E166"} />
           ),
           headerRight: () => (
             <Entypo
               onPress={() => navigation.navigate("Contacts")}
               name="new-message"
               size={18}
-              color={"royalblue"}
+              color={"#55E166"}
               style={{ marginRight: 15 }}
             />
           ),
@@ -63,10 +63,10 @@ const MainTabNavigator = () => {
       />
       <Tab.Screen
         name="Settings"
-        component={SettingsScreen}
+        component={SettingsScreen} 
         options={{
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="settings-outline" size={size} color={color} />
+            <Ionicons name="settings-outline" size={size} color={"#55E166"} />
           ),
         }}
       />

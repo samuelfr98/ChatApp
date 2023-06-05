@@ -5,8 +5,7 @@ import { listChatRooms } from "./queries";
 import { useEffect, useState } from "react";
 
 const ChatsScreen = () => {
-  const [chatRooms, setChatRooms] = useState([])
-
+  const [chatRooms, setChatRooms] = useState([]);
 
   useEffect(() => {
     const fetchChatRooms = async () => {
@@ -17,7 +16,6 @@ const ChatsScreen = () => {
         })
       );
 
-
       setChatRooms(response.data.getUser.ChatRooms.items);
     };
     fetchChatRooms();
@@ -27,7 +25,9 @@ const ChatsScreen = () => {
     <FlatList
       data={chatRooms}
       renderItem={({ item }) => <ChatListItem chat={item.chatRoom} />}
-      style={{ backgroundColor: "white" }}
+      style={{
+        backgroundColor: "#06140E",
+      }}
     />
   );
 };

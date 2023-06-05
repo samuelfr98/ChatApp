@@ -1,6 +1,6 @@
 // Front-End reference/guide video: https://www.youtube.com/watch?v=mxXJSVW4tRY
 // Backend reference/guide videos:
-//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc        --> Stopped @2:28:25 ; chats are not specific for each user/duplicate chats with same users can be created. 
+//  pt1: https://www.youtube.com/watch?v=8psijC5ezkc        --> Stopped @2:28:25 ; chats are not specific for each user/duplicate chats with same users can be created.
 //  pt2: https://www.youtube.com/watch?v=-m-4_DRLmrc
 //  pt3: https://www.youtube.com/watch?v=pqQGU-JsD7k
 
@@ -18,7 +18,6 @@ Amplify.configure({ ...awsconfig, Analytics: { disabled: true } });
 
 function App() {
   useEffect(() => {
-
     // Syncs User managed data in backend with all Authenticated Users. Short term solution before writing lambda function to manages this all in the backend.
     const syncUser = async () => {
       // get Auth user
@@ -64,8 +63,8 @@ function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "whitesmoke",
     justifyContent: "center",
+    backgroundColor: "whitesmoke",
   },
 });
 
